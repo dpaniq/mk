@@ -1,0 +1,40 @@
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__wrap {
+    flex: 1;
+    position: relative;
+    overflow-y: scroll;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    background-color: $c-black;
+    border-radius: 6px;
+}
+
+.contentWrap {
+    background: url('../assets/images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%) blur(7px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100%);
+    opacity: 0.5;
+}
+
+.contentWrap__container {
+    height: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+

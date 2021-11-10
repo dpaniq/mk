@@ -1,0 +1,3 @@
+// export Class extends Error {
+
+// }

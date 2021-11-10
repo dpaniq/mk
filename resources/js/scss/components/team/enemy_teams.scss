@@ -1,0 +1,118 @@
+@import '../../variables.scss';
+
+.enemy-teams {
+    padding: .2rem;
+}
+
+.enemy {
+    border-radius: 10rem;
+    background: rgb(29, 26, 26);
+    padding: .8rem 2rem;
+    margin: .5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    &__title {
+        text-transform: capitalize;
+        color: white;
+        font-size: 20px;
+        margin: 0 1rem;
+    }
+
+    &__img {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        width: 35px;
+        height: 35px;
+        transform: translate(0, -50%);
+        object-fit: cover;
+        border-radius: 50%;
+        filter: grayscale(1);
+    }
+
+    &.active {
+        background: $clr_orange_light;
+    }
+
+    &__trade_btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: row;
+        & button:active {
+            background: #04D683;
+        }
+    }
+
+    &__textarea  {
+        flex: auto;
+    }
+}
+
+
+.countBttn {
+    min-width: 46px;
+    width: 46px;
+    min-height: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    
+}
+.countSubmit {
+    // background: #e8aa3d;
+    background: $clr_green_light;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+    &.countSubmit__gm {
+        background: $clr_green;
+        &:disabled {
+            background: $clr_green_light;
+            color: rgba(255, 255, 255, 0.529);
+        }
+    }
+    
+    &.countSubmit__team {
+        background: $clr_orange;
+        &:disabled {
+            background: $clr_orange_light;
+            color: rgba(255, 255, 255, 0.529);
+        }
+    }
+}
+
+
+
+.team {
+    background: rgb(29, 26, 26);
+    border-radius: 10rem;
+}
+
+
+.calculator__hr {
+    width: calc(100% - 20px);
+    margin: 0 auto 20px;
+    height: 1px;
+    background-color: #5b5c5f;
+}
+  

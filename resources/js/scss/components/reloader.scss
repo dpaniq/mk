@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.reloader {
+    & button {
+        padding: 0;
+        margin: 0;
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $clr_green_dark;
+        border-radius: 50%;
+        background: $clr_green_light;
+
+        & img {
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            fill: white;
+            width: 41px;
+            height: 41px;
+            transition: opacity 1s ease-in-out;
+        }
+    }
+
+    & button.active {
+        background: $clr_green;
+        & img {
+            -webkit-animation:spin 1s ease-in infinite;
+            -moz-animation:spin 1s ease-in infinite;
+            animation: spin 1s ease-in infinite;
+        }
+    }
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { 
+    -webkit-transform: rotate(-360deg); 
+    transform:rotate(-360deg); } }

@@ -1,0 +1,37 @@
+
+
+.swal-wide{
+    width: calc(100% - 20px) !important;
+}
+
+.swal2-container {
+    font-family: 'Roboto', sans-serif;
+}
+
+.swal2-container.swal2-center.swal2-backdrop-show {
+    background: rgba(15, 15, 17, .95);
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+    background: rgb(39, 41, 61);
+}
+
+.swal2-html-container {
+    display: block;
+    color: wheat !important;
+    font-size: 12px !important;
+}
+
+.swal2-title {
+    color: wheat !important;
+}
+
+.swal2-html-container table {
+    width: 100%;
+}
+
+.swal2-success-fix,
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right {
+    background: rgb(39, 41, 61) !important;
+}

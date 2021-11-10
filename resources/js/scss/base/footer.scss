@@ -1,0 +1,38 @@
+
+.footer {
+    height: 50px;
+    background-color: $c-black;
+    display: grid;
+}
+
+.footer__menu {
+    width: 100%;
+    display: flex;
+}
+
+.footerMenu__link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 500ms all;
+    padding: 0 3px;
+}
+
+.footerMenu__link-active {
+    background-color: #e90c15;
+}
+
+.footerMenu__link-img {
+    max-width: 20px;
+    fill: #fff;
+    margin-bottom: 2px;
+}
+
+.footerMenu__link-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}

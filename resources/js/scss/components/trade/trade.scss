@@ -1,0 +1,81 @@
+@import '../../variables';
+
+.trade {
+    // border-radius: calc(40 * 1px);
+    // border: 1px solid $clr_black_dark;
+    // background: rgba($clr_black_dark, .5);
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        // justify-content: center;
+        
+        background: rgba($clr_black_dark, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+        
+        font-family: "MasonChronicles";
+        font-weight: bolder;
+        font-size: 17px;
+        
+        border-radius: 10rem;
+        min-width: 230px;
+        height: 56px;
+        
+        opacity: 0.8;
+
+        & img {
+            position: absolute;
+            width: 25px;
+            // background: rgba(255, 255, 255, 0.659);
+            border-radius: 50%;
+
+            top: 50%;
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+
+        & span {
+            margin-left: 5px;
+        }
+
+        &.active {
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            &.active__gm {
+                background: $clr_green_light;
+                &:active {
+                    background-size: 100%;
+                    background: $clr_green_dark;
+                }
+            }
+
+            &.active__team {
+                background: $clr_orange_light;
+                &:active {
+                    background-size: 100%;
+                    background: $clr_orange_dark;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .trade__row {
+      flex-direction: column;
+    }
+
+    button {
+        margin: .5rem;
+    }
+  }
+

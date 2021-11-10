@@ -1,0 +1,23 @@
+#operations {
+    font-size: 12px;
+}
+
+.operation_income {
+    color: #449044 !important;
+}
+
+.operation_expence {
+    color: #bd5050 !important
+}
+
+.operation_separator {
+    opacity: 0.1;
+}
+
+.operations-tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}

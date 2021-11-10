@@ -1,0 +1,14 @@
+@import './font';
+@import '../components/team';
+@import '../components/achivements';
+@import '../components/spots';
+
+* {
+    line-height: 150%;  
+}
+
+html, body, #root {
+    height: 100%;
+    font-family: "MasonChronicles";
+    color: $c-white;
+}

@@ -1,0 +1,44 @@
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #21242d url('../../assets/images/loader.gif') no-repeat center;
+    background-color: #080b0f;
+    background-size: contain;
+    z-index: 999;
+}
+
+.loader__text {
+    position: absolute;
+    width: 100%;
+    // height: 100vh;
+    bottom: 20%;
+    text-align: center;
+    color: #8c8a8a;
+
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+}
+
+
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  

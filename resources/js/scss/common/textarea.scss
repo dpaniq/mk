@@ -1,0 +1,26 @@
+textarea {
+    font-family: "MasonChronicles";
+    font-weight: 800;
+    position: relative;
+    /* margin: 0.1rem .2rem; */
+    padding: 1rem 1rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: .2rem;
+    border: none;
+    width: 100%;
+    /* line-height: .4; */
+    /* font-size: 1rem; */
+    box-sizing: border-box;
+    resize: none;
+    height: 60px;
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea::placeholder {
+    font-family: "MasonChronicles";
+    font-weight: 700;
+}
